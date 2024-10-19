@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Todo List Application</title>
+   <link rel="stylesheet" href="./output.css">
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-purple-100 flex flex-col items-center justify-center min-h-screen p-4">
+   <div class="bg-white rounded-xl shadow-lg p-8 w-full max-w-md">
+      <section id="title" class="mb-6">
+         <h1 class="text-3xl font-bold text-center text-gray-700">Todo List Application</h1>
+      </section>
+      
+      <section id="input" class="mb-6">
+         <div class="relative">
+            <input type="text" name="assignment" id="assignment" 
+                   class="w-9/12 pl-3 pr-2 py-3 border-2 border-gray-600 rounded-lg focus:outline-none focus:border-gray-700 transition duration-300 bg-gray-100 text-gray-800 placeholder-gray-500"
+                   placeholder="Inputkan tugas yang akan dikerjakan..">
+            <button id="btn-tambah"
+                    class="absolute right-1 top-1/2 transform -translate-y-1/2 bg-gray-400 text-black rounded-lg px-3 py-3.5 border-2 border-gray-600 hover:bg-gray-500 transition duration-300 text-sm font-semibold">
+               TAMBAH
+            </button>
+         </div>
+      </section>
+      
+      <section id="output" class="space-y-2">
+      </section>
+   </div>
+   <script src="main.js"></script>
+</body>
+</html>
